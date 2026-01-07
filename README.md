@@ -178,5 +178,7 @@ npm start    # or python app.py
 2. Lecturer logs in → views submission → clicks “Verify”
 3. System recomputes hash → shows Verified / Compromised
 4. Cybersecurity team simulates blocked attacks:
+
 • Student tries accessing another student’s file → blocked
+
 • Invalid file upload → blocked
