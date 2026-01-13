@@ -1,30 +1,22 @@
 import React from "react";
 import securedocshield from "../assets/securedocshield.png";
-import secureguys from "../assets/secureguys.png";
+import secureDoc4 from "../assets/securedoc4.png"
 import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-[#a9afbc]">
+    <div className="flex flex-col lg:flex-row min-h-screen bg-[#E5E7EB]">
       {/* LEFT ILLUSTRATION */}
-      <div className="w-full lg:w-1/2 bg-[#F2C994] relative min-h-[240px] sm:min-h-[280px] lg:min-h-screen overflow-hidden order-2 lg:order-1">
-        <div className="absolute inset-0 bg-[#E5E7EB] transform -skew-x-12 -translate-x-1/2" />
-
-        <img
-          src={secureguys}
-          alt="Characters"
-          className="
-          absolute
-          top-20
-          left-1/2
-          -translate-x-1/2
-          w-[70%]
-          sm:w-[60%]
-          md:w-[55%]
-          lg:w-[90%]
-          object-contain
-          "
-        />
+      <div className="w-full lg:w-1/2 relative min-h-[240px] sm:min-h-[280px] lg:min-h-screen overflow-hidden order-2 lg:order-1">
+        <div
+          className="w-fit h-screen"
+        >
+          <img
+            src={secureDoc4}
+            alt="SecureDoc Illustration"
+            className="drop-shadow-2xl h-screen px-30"
+          />
+        </div>
       </div>
 
       {/* RIGHT FORM */}

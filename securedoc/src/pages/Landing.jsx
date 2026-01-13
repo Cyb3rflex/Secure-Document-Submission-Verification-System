@@ -7,6 +7,7 @@ import useDarkMode from "../hooks/useDarkMode";
 import secureguys from "../assets/secureguys.png";
 import securedocwoman1 from "../assets/securedocwoman1.png";
 import securedocwoman2 from "../assets/securedocwoman2.png";
+import secureDoc3 from "../assets/securedoc3.png"
 import securedocshield from "../assets/securedocshield.png";
 
 const ROLES = [
@@ -40,10 +41,10 @@ export default function Landing() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen flex flex-col lg:flex-row bg-white dark:bg-zinc-950 transition-colors duration-300"
+      className="min-h-screen flex flex-col lg:flex-row lg:justify-between bg-white dark:bg-zinc-950 transition-colors duration-300"
     >
       {/* LEFT */}
-      <section className="w-full lg:w-1/2 px-6 sm:px-10 lg:px-16 py-12 flex flex-col justify-center">
+      <section className="w-full lg:w-[60%] px-6 sm:px-10 lg:px-16 py-12 flex flex-col justify-center">
         {/* Top bar */}
         <div className="flex items-center justify-between">
           <img
@@ -131,12 +132,16 @@ export default function Landing() {
       </section>
 
       {/* RIGHT */}
-      <section className="hidden lg:flex w-1/2 items-center justify-center bg-gradient-to-br from-amber-400 to-orange-400 p-12">
-        <img
-          src={secureguys}
-          alt="SecureDoc Illustration"
-          className=" object-contain drop-shadow-2xl"
-        />
+      <section className="hidden lg:flex h-full items-center justify-end">
+        <div
+          className="w-fit h-screen"
+        >
+          <img
+            src={secureDoc3}
+            alt="SecureDoc Illustration"
+            className="drop-shadow-2xl h-screen"
+          />
+        </div>
       </section>
     </motion.div>
   );
