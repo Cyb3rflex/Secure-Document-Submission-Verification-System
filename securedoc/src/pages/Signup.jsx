@@ -14,7 +14,7 @@ const Signup = () => {
           <img
             src={secureDoc4}
             alt="SecureDoc Illustration"
-            className="drop-shadow-2xl h-screen px-30"
+            className="drop-shadow-2xl h-screen"
           />
         </div>
       </div>
