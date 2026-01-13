@@ -1,5 +1,5 @@
 import securedocshield from "../assets/securedocshield.png";
-import secureDoc4 from "../assets/securedoc4.png"
+import secureDoc4 from "../assets/securedoc4.png";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -7,13 +7,11 @@ const Login = () => {
     <div className="flex flex-col lg:flex-row min-h-screen bg-[#E5E7EB]">
       {/* LEFT ILLUSTRATION - hidden on small screens */}
       <div className="hidden lg:block w-1/2 relative min-h-screen overflow-hidden">
-        <div
-          className="w-fit h-screen"
-        >
+        <div className="w-2xl h-screen">
           <img
             src={secureDoc4}
             alt="SecureDoc Illustration"
-            className="drop-shadow-2xl h-screen px-30"
+            className="drop-shadow-2xl h-screen "
           />
         </div>
       </div>
@@ -21,8 +19,7 @@ const Login = () => {
       {/* RIGHT FORM */}
       <div
         className="w-full lg:w-1/2 bg-[#E5E7EB] flex items-center justify-center
-                  sm:h-screen lg:h-auto
-                  px-6 md:px-12 lg:py-24"
+                   lg:h-auto"
       >
         {" "}
         {/* h-screen only on small screens, desktop auto */}
