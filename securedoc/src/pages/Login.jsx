@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-[#E5E7EB]">
+    <div className="flex flex-col lg:flex-row min-h-screen justify-center bg-[#E5E7EB] dark:bg-zinc-950">
       {/* LEFT ILLUSTRATION - hidden on small screens */}
       <div className="hidden lg:block w-1/2 relative min-h-screen overflow-hidden">
         <div
