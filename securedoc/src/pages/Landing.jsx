@@ -4,7 +4,7 @@ import { ChevronRight, Sun, Moon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import useDarkMode from "../hooks/useDarkMode";
 
-import secureguys from "../assets/secureguys.png";
+// import secureguys from "../assets/secureguys.png";
 import securedocwoman1 from "../assets/securedocwoman1.png";
 import securedocwoman2 from "../assets/securedocwoman2.png";
 import secureDoc3 from "../assets/securedoc3.png"
