@@ -7,7 +7,7 @@ const Signup = () => {
   return (
     <div className="flex flex-col lg:flex-row min-h-screen bg-[#E5E7EB]">
       {/* LEFT ILLUSTRATION */}
-      <div className="w-full lg:w-1/2 relative min-h-[240px] sm:min-h-[280px] lg:min-h-screen overflow-hidden order-2 lg:order-1">
+      <div className="w-full lg:w-1/2 relative min-h-60 sm:min-h-70 lg:min-h-screen overflow-hidden order-2 lg:order-1">
         <div
           className="w-fit h-screen"
         >
