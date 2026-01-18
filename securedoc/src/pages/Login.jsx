@@ -47,6 +47,23 @@ const Login = () => {
           focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
             />
 
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <input
+                  type="checkbox"
+                  className="w-4 h-4 text-orange-500 border-gray-300 rounded focus:ring-orange-300"
+                />
+                <label className="ml-2 text-sm text-gray-600">
+                  Remember me
+                </label>
+              </div>
+              <div>
+                <Link to="/reset-password" className="text-[#C08C4A] font-semibold cursor-pointer hover:underline">
+                  Forgot password?
+                </Link>
+              </div>
+            </div>
+
             <button
               className="w-full py-4 md:py-5 bg-[#C08C4A] text-white font-semibold
           rounded-2xl hover:bg-[#a6783f] transition shadow-md mt-2"
