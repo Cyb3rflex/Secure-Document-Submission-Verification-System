@@ -1,19 +1,20 @@
 import { useEffect, useState } from "react";
 
 export default function useDarkMode() {
-  const [isDark, setIsDark] = useState(() =>
-    localStorage.theme === "light"
-  );
+  const [isDark, setIsDark] = useState(() => {
+    if (localStorage.getItem("theme") === 'light') return true
+    return false
+});
 
   useEffect(() => {
     const root = window.document.documentElement;
 
     if (isDark) {
       root.classList.add("dark");
-      localStorage.theme = "dark";
+      localStorage.setItem("theme", "dark")
     } else {
       root.classList.remove("dark");
-      localStorage.theme = "light";
+      localStorage.setItem("theme" , "light")
     }
   }, [isDark]);
 
