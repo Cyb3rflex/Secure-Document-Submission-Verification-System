@@ -44,7 +44,7 @@ export default function UploadActions({ onSuccess }) {
     <div className="bg-gray-100 rounded-lg py-8 flex flex-col items-center gap-4">
       <label className="cursor-pointer">
         <input type="file" hidden onChange={handleSelect} />
-        <span className="bg-gradient-to-b from-[#e3b56a] to-[#c18b3a] text-white px-8 py-2 rounded-md text-sm font-medium">
+        <span className="bg-linear-to-b from-[#e3b56a] to-[#c18b3a] text-white px-8 py-2 rounded-md text-sm font-medium">
           Select File
         </span>
       </label>
@@ -55,7 +55,7 @@ export default function UploadActions({ onSuccess }) {
         className={`px-8 py-2 rounded-md text-sm font-medium text-white
           ${loading
             ? "bg-gray-400 cursor-not-allowed"
-            : "bg-gradient-to-b from-green-600 to-green-800"}
+            : "bg-linear-to-b from-green-600 to-green-800"}
         `}
       >
         {loading ? "Uploading..." : "Upload File"}

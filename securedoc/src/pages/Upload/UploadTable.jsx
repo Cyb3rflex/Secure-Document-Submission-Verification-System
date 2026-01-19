@@ -15,7 +15,7 @@ export default function UploadTable({ role }) {
         Your Recent Uploads
       </h2>
 
-      <table className="w-full text-xs sm:text-sm border border-gray-200 rounded-lg min-w-[500px] sm:min-w-full">
+      <table className="w-full text-xs sm:text-sm border border-gray-200 rounded-lg min-w-125 sm:min-w-full">
         {/* TABLE HEADER */}
         <thead className="bg-[#e8be7b] text-white text-[10px] sm:text-sm">
           <tr>
