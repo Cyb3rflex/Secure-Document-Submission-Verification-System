@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { uploadFile } from "../../services/upload.service";
-import { MAX_FILE_SIZE_MB, ALLOWED_FILE_TYPES } from "./upload.constants";
+import { MAX_FILE_SIZE_MB, ALLOWED_FILE_TYPES } from "../../utils/upload.constants";
 
 export default function UploadActions({ onSuccess }) {
   const [file, setFile] = useState(null);
