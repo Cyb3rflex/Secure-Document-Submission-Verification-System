@@ -5,7 +5,8 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import PasswordReset from "./pages/PasswordReset";
 import Onboarding from "./pages/Onboarding"; // placeholder
-import UploadPage from "./pages/Upload/UploadPage";
+import UploadPage from "./pages/UploadPage";
+import Lecturer from "./pages/Lecturer";
 
 export default function App() {
   const location = useLocation();
@@ -33,6 +34,7 @@ export default function App() {
             )
           }
         />
+        <Route path="/lecturerhome" element={<Lecturer />} />
         <Route path="/onboarding" element={<Onboarding />} />
         <Route path="*" element={<Navigate to="/upload" />} />
       </Routes>
