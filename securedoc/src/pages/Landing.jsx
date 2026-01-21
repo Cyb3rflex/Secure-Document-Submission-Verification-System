@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronRight, Sun, Moon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import useDarkMode from "../hooks/useDarkMode";
 
 // import secureguys from "../assets/secureguys.png";
 import securedocwoman1 from "../assets/securedocwoman1.png";
 import securedocwoman2 from "../assets/securedocwoman2.png";
 import secureDoc3 from "../assets/securedoc3.png"
 import securedocshield from "../assets/securedocshield.png";
+import DarkModeToggle from "../components/ui/DarkModeToggle";
+import Button from "../components/ui/Button";
 
 const ROLES = [
   {
@@ -33,7 +34,6 @@ const ROLES = [
 
 export default function Landing() {
   const [selectedRole, setSelectedRole] = useState(null);
-  const [isDark, setIsDark] = useDarkMode();
   const navigate = useNavigate();
 
   return (
@@ -53,12 +53,7 @@ export default function Landing() {
             className="w-16 object-contain"
           />
 
-          <button
-            onClick={() => setIsDark(!isDark)}
-            className="p-2 rounded-full bg-zinc-100 dark:bg-zinc-800 hover:scale-105 transition"
-          >
-            {isDark ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
+          <DarkModeToggle />
         </div>
 
         <h1 className="mt-8 text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white">
@@ -114,21 +109,11 @@ export default function Landing() {
         </div>
 
         {/* SINGLE CTA */}
-        <button
-          onClick={() => {
+        <Button text={'Create Account'} disabled={!selectedRole} onClick={ () => {
             localStorage.setItem("role", selectedRole);
             navigate("/signup");
           }}
-          disabled={!selectedRole}
-          className={`mt-10 w-full sm:w-56 py-3 rounded-full text-sm font-medium transition-all duration-300
-            ${
-              selectedRole
-                ? "bg-amber-400 text-black hover:bg-amber-500 hover:scale-105"
-                : "bg-gray-100 dark:bg-zinc-800 text-gray-400 cursor-not-allowed"
-            }`}
-        >
-          Create account
-        </button>
+        />
       </section>
 
       {/* RIGHT */}
